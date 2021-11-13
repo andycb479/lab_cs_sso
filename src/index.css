@@ -1,13 +1,37 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.my-facebook-button-class {
+  background-color: rgb(66, 133, 244);
+  color: rgb(255, 255, 255);
+  height: 50px;
+  width: 300px;
+  border: none;
+  text-align: center;
+  box-shadow: rgb(0 0 0 / 25%) 0px 2px 4px 0px;
+  font-size: 16px;
+  line-height: 48px;
+  display: block;
+  border-radius: 1px;
+  transition: background-color 0.218s ease 0s, border-color 0.218s ease 0s,
+    box-shadow 0.218s ease 0s;
+  font-family: Roboto, arial, sans-serif;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 5 px;
+}
+.my-facebook-button-class i {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
 }
