@@ -49,14 +49,14 @@ function App() {
     if (!err && data) {
       onMsalInstanceChange(msal);
       console.log("Microsoft User Details", data);
+      setUser({
+        id: data.account.accountIdentifier,
+        name: data.account.name,
+        email: data.account.userName,
+        // picture: response.picture.data.url,
+        source: "Microsoft",
+      });
     }
-    setUser({
-      id: data.account.accountIdentifier,
-      name: data.account.name,
-      email: data.account.userName,
-      // picture: response.picture.data.url,
-      source: "Microsoft",
-    });
   };
 
   const logOutHandler = () => {
